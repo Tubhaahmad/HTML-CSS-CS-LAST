@@ -1,0 +1,1147 @@
+/*HOME PAGE HEADER IMAGE*/
+main {
+  padding-top: 5rem;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+.common-div {
+  display: flex;
+  flex-direction: column;
+  padding: 4.5rem 6rem;
+  justify-content: center;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+/*HEADER*/
+header {
+  height: 5rem;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0rem 0.25rem 0.938rem #00000010;
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  text-align: center;
+  width: 100%;
+  margin: 0%;
+}
+
+.logo-div {
+  width: 6rem;
+  height: 3.0125rem;
+  padding-left: 20rem;
+}
+
+.logo-div img {
+  width: 100%;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  background-color: #fff;
+  z-index: 80;
+}
+
+.nav-links a {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 1rem;
+  font-family: "Sora";
+  font-weight: 400;
+  color: #000;
+  padding: 1.8rem 0.7rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (width>850px) {
+  .nav-links li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 5rem;
+    min-width: 6rem;
+    /* padding: 0rem 0.5rem; */
+    transition: all 0.2s ease-in-out;
+  }
+
+  .nav-links li:hover {
+    background-color: var(--background-color-addbtn-hover);
+  }
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 0%;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links li a:hover:after {
+  width: 100%;
+}
+
+.c-open-menu,
+.c-close-menu {
+  position: absolute;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.c-open-menu {
+  top: 35%;
+  right: 1.25rem;
+  transform: translateY(-50);
+}
+
+.c-close-menu {
+  top: 2rem;
+  right: 1.25rem;
+}
+
+.nav-icons i {
+  padding-left: 1.25rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.jacket-categories-main {
+  position: absolute;
+  top: 5rem;
+  overflow: hidden;
+  background-color: #fff;
+  min-width: 13rem;
+  max-height: 14rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.jacket-categories-sub ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.jacket-categories-sub ul li a {
+  display: block;
+  width: 100%;
+}
+
+.nav-links li:hover .jacket-categories-main {
+  visibility: visible;
+  transition: max-height 0.2s ease-in;
+  opacity: 1;
+}
+
+.nav-login {
+  color: #000000;
+}
+
+.jacket-links-mobile {
+  display: none;
+}
+
+@media (width <850px) {
+  .nav-links a {
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .jacket-links-mobile .c-summary-btn {
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: lightgray;
+      color: #000000;
+      border-bottom: 0.7rem solid red;
+      margin: auto;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    z-index: 100;
+    background-color: #03346e;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-links li {
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .nav-links li :hover {
+    background-color: lightgray;
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-links li .nav-item {
+    padding: 1rem;
+    color: white;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .nav-links li .nav-item:hover {
+    color: #000000;
+    border-bottom: 0.7rem solid red;
+    margin: auto;
+  }
+
+  .c-open-menu,
+  .c-close-menu {
+    display: flex;
+  }
+
+  .c-close-menu i {
+    color: white;
+  }
+
+  #check:checked ~ .nav-links {
+    right: 0%;
+  }
+
+  .jacket-categories-main {
+    position: absolute;
+    top: 15rem;
+    overflow: hidden;
+    background-color: #fff;
+    min-width: 13rem;
+    max-height: 7rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .jacket-categories-sub ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .jacket-categories-sub ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .nav-links li:hover .jacket-categories-main {
+    visibility: visible;
+    transition: max-height 0.2s ease-in;
+    opacity: 1;
+  }
+
+  .jacket-links-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #jacket-links {
+    display: none;
+    background-color: red;
+  }
+
+  .jacket-links-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  .jacket-summary {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .jacket-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .jacket-links-mobile .jacket-summary:hover {
+    background-color: lightgray;
+    color: #000000;
+    width: 100%;
+    border-bottom: 0.7rem solid red;
+    margin: auto;
+  }
+}
+
+.nav-icons {
+  display: flex;
+}
+
+@media (width<600px) {
+  .desktop-nav {
+    padding: 2rem 4rem 2rem 1.3rem;
+  }
+}
+/*home-page*/
+.home-img {
+  background-image: url(/img/home-page-header.jpg);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.title-text {
+  width: 100%;
+  padding: 30rem 0 2rem 3rem;
+  color: white;
+  font-family: "Sora";
+  font-size: 2rem;
+
+  @media (width>400px) {
+    font-size: 3rem;
+  }
+
+  @media (width>820px) {
+    width: 50rem;
+  }
+}
+
+.shop-now-btn {
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+}
+.cta {
+  background-color: white;
+  color: black;
+  font-size: 1em;
+  max-height: 46px;
+  border-radius: 1rem;
+  padding: 9px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*HOME PAGE SECTION 2*/
+.new-fall-collection-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora";
+  padding-top: 1rem;
+}
+
+.new-fall-collection-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sora";
+  font-weight: 400;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.new-fall-collection-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.img-container {
+  display: flex;
+  width: 100%;
+}
+
+.img-container {
+  display: flex;
+  max-height: 900px;
+  width: auto;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.jacket-name {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-family: "Sora";
+}
+
+.jacket-gender {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Sora";
+  font-weight: 200;
+}
+
+.jacket-price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Sora";
+  font-weight: 600;
+}
+
+.c-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.c-btn-container a {
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  background-color: black;
+  font-family: "Sora";
+  font-weight: 200;
+}
+
+.equipment-essentials-items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/*JACKETS PAGE*/
+.jackets-header-container {
+  display: flex;
+
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 1rem;
+  padding-top: 2rem;
+}
+
+.womens-jackets {
+  display: flex;
+  font-weight: 500;
+  font-size: 2.6rem;
+  font-family: "Sora";
+  text-transform: uppercase;
+}
+
+.womens-jackets-paragraph {
+  display: flex;
+  width: 100%;
+  font-size: medium;
+  font-weight: 200;
+  font-family: "Sora";
+  padding-bottom: 0.3rem;
+}
+
+.read-more {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  font-size: medium;
+  font-weight: 200;
+  padding-bottom: 1rem;
+}
+
+.read-more a {
+  color: red;
+}
+
+.jacket-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Sora";
+  color: black;
+  gap: 1rem;
+}
+
+.jacket-types a {
+  color: black;
+  text-decoration: none;
+}
+
+.sort-items-filter {
+  display: flex;
+  flex-direction: row;
+  font-family: "Sora";
+  justify-content: center;
+  font-weight: 500;
+  gap: 40rem;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+/*JACKET SPESIFIC PAGE ---- FIKS PÅ DENNE!!!!!!!!!*/
+
+.jacket-specific-containter {
+  justify-content: center;
+}
+
+.jacket-specific {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1400px) {
+    flex-direction: row;
+  }
+}
+
+.jacket-specific-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 5rem;
+  column-gap: 1rem;
+}
+
+.jacket-specific-image {
+  display: none;
+  max-height: 800px;
+
+  @media (min-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.jacket-specific-image img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.jacket-specific-image-large img {
+  max-width: 300px;
+  justify-self: center;
+
+  @media (min-width: 680px) {
+    max-width: 500px;
+  }
+
+  @media (min-width: 1400px) {
+    width: 200rem;
+  }
+}
+
+.jacket-specific-info {
+  padding-left: 3rem;
+}
+
+.jacket-specific-info-brand,
+.jacket-specific-info-color {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  font-weight: 400;
+}
+
+.jacket-specific-color {
+  font-family: "Sora";
+  font-weight: 450;
+  padding-top: 4rem;
+}
+
+.jacket-specific-color img {
+  max-width: 150px;
+}
+
+.jacket-specific-size-info {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  padding-top: 2rem;
+  font-family: "Sora";
+  font-weight: 500;
+}
+
+.jacket-specific-size-options {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  gap: 1rem;
+}
+
+.size-btn {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  width: 8rem;
+  text-align: center;
+  font-family: "Sora";
+}
+
+.btn-add-to-cart {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 35rem;
+  text-align: center;
+  font-family: "Sora";
+  text-decoration: none;
+}
+
+.jacket-specific-related {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  padding-left: 1rem;
+
+  @media (width>1400px) {
+    padding-left: 37.5rem;
+    padding-top: 10rem;
+  }
+}
+
+.jacket-specific-description-heading {
+  padding-top: 1rem;
+  font-family: "Sora";
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.jacket-specific-description {
+  font-family: "Sora";
+  font-weight: 300;
+  padding-top: 0.5rem;
+}
+
+.jacket-specific-related-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+
+  @media (min-width: 680px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: 1400px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.jacket-specific-details {
+  padding-top: 1rem;
+  font-family: "Sora";
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.jacket-specific-material {
+  padding-top: 1rem;
+  font-family: "Sora";
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.jacket-specific-delivery {
+  padding-top: 1rem;
+  font-family: "Sora";
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/*CHECKOUT PAGE - BOX 1*/
+.body-color {
+  background-color: #eeeeee;
+}
+.checkout-box-1-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  width: 100%;
+}
+
+.checkout-main-heading h1 {
+  display: flex;
+  font-family: "Sora";
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+
+.checkout-headings h2 {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Sora";
+  font-size: x-large;
+  padding-top: 1rem;
+}
+
+.box-1 {
+  flex-wrap: wrap;
+  border: none;
+  background-color: #ffffff;
+  width: 1100px;
+  height: 445px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+
+  @media (width<500px) {
+    width: 300px;
+  }
+
+  @media (width<600px) {
+    width: 500px;
+  }
+}
+
+.box-1-section-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-img-checkout {
+  display: flex;
+  width: fit-content;
+}
+
+.jacket-specific-brand-check {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: smaller;
+  padding-left: 30rem;
+}
+
+.jacket-specific-info-brand-check {
+  padding-left: 2rem;
+  flex-direction: column;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: smaller;
+}
+
+.jacket-color-checkout {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.checkout-box-1-section-2 {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.checkout-box-1-lines {
+  border-top: 1.5px solid rgb(0, 0, 0);
+  width: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  justify-content: space-between;
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: medium;
+}
+.checkout-box-1-price-small {
+  display: flex;
+  font-family: "Sora";
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.checkout-box-1-subtotal {
+  display: flex;
+  font-size: medium;
+  justify-content: space-between;
+  padding-bottom: 0.8rem;
+}
+
+.checkout-box-1-price-small {
+  display: flex;
+  font-size: medium;
+}
+
+.checkout-box-1-order-total-text {
+  display: flex;
+  font-size: x-large;
+  padding-top: 0.6rem;
+  justify-content: space-between;
+}
+
+/*CHECKOUT PAGE - BOX 2*/
+.checkout-box-2-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+
+  @media (width<500px) {
+    width: 300px;
+  }
+
+  @media (width<600px) {
+    width: 400px;
+  }
+}
+
+.box-2 {
+  flex-wrap: wrap;
+  border: none;
+  background-color: #ffffff;
+  width: 1100px;
+  height: 690px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+
+  @media (width<500px) {
+    width: 300px;
+  }
+
+  @media (width<600px) {
+    width: 500px;
+  }
+}
+
+.box-headings h3 {
+  display: flex;
+  font-family: "Sora";
+  width: 100%;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+/*CHECKOUT - BOX 2*/
+
+input {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  font-size: medium;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border-color: black;
+  margin-bottom: 20px;
+}
+
+textarea {
+  font-size: medium;
+  width: 100%;
+  margin-left: 1rem;
+  font-size: medium;
+  padding: 16px 16px;
+  border-radius: 10px;
+}
+
+/*CHECKOUT - BOX 3*/
+
+.shipping-methods-box {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 6rem;
+  background-color: hsl(0, 0%, 89%);
+  border-radius: 10px;
+}
+
+.shipping-methods-box h4 {
+  color: #000000;
+  border: 2px black;
+  font-family: "Sora";
+  font-size: medium;
+  font-weight: 600;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  padding-left: 6rem;
+  padding-top: 1rem;
+}
+
+.checkout-box-3-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.btn-order-now {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 35rem;
+  text-align: center;
+  font-family: "Sora";
+  text-decoration: none;
+}
+
+.box-4 {
+  flex-wrap: wrap;
+  border: none;
+  background-color: #ffffff;
+  width: 1100px;
+  height: 690px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  justify-content: center;
+
+  @media (width<500px) {
+    width: 300px;
+  }
+
+  @media (width<600px) {
+    width: 500px;
+  }
+}
+
+.checkout-box-4-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.success-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+
+/*CONTACT & ABOUT PAGE*/
+.body-color {
+  background-color: #eeeeee;
+}
+.contact-box-1-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 17rem;
+}
+.contact-box {
+  border: none;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 1100px;
+  height: 730px;
+  padding: 10px;
+  border-radius: 10px;
+
+  @media (width<320px) {
+    width: 350px;
+    height: 520px;
+  }
+}
+
+.contact-about-box-headings h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Sora";
+  font-size: x-large;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact-about-sub-head h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Sora";
+  font-size: medium;
+}
+
+.contact-about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Sora";
+  font-size: medium;
+  padding-bottom: 1rem;
+  width: 55rem;
+}
+
+.contact-sub-head {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  font-size: large;
+  padding-top: 3rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  font-family: "Sora";
+  font-size: medium;
+  padding-top: 1rem;
+}
+
+/*CHECKOUT SUCCESS PAGE*/
+
+/*FOOTER*/
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 50px;
+  background-color: #1a1f1b;
+  color: #fff;
+
+  @media (width>400px) {
+    flex-direction: row;
+  }
+
+  @media (width>900px) {
+    justify-content: space-between;
+  }
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-customer-service,
+.footer-shipping,
+.footer-about,
+.footer-follow,
+.footer-payment {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (width>600px) {
+    width: 47%;
+  }
+
+  @media (width>900px) {
+    width: fit-content;
+    justify-content: space-between;
+  }
+}
