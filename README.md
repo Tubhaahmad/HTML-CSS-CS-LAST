@@ -6,7 +6,7 @@
 
 - [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
 - [Design](_LINK_TO_FIGMA_)
-- [Production deploy](https://tubha-htmlcss-ca.netlify.app/_LINK_TO_WEBSITE_)
+- [Production deploy](https://tubha-htmlcss-ca.netlify.app)
 - [Deployment CI](https://app.netlify.com/sites/tubha-htmlcss-ca/overview)
 
 ## Report
