@@ -44,21 +44,23 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
   text-align: center;
   width: 100%;
   margin: 0%;
+  padding-right: 1rem;
 }
 
 .logo-div {
   width: 6rem;
   height: 3.0125rem;
-  padding-left: 20rem;
+  padding-left: 1rem;
 }
 
 .logo-div img {
   width: 100%;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-links {
@@ -991,16 +993,70 @@ textarea {
   width: 100%;
 }
 
+.checkout-box-4-container {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  padding-top: 4rem;
+}
+
 .btn-order-now {
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-  border-radius: 20px;
-  padding: 5px;
-  max-width: 35rem;
-  text-align: center;
+  justify-content: center;
   font-family: "Sora";
+  font-size: large;
+  font-weight: 300;
+  border: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  align-content: center;
+  padding: 1rem;
+  text-align: center;
+  width: 400px;
   text-decoration: none;
+}
+
+.payment-method-container {
+  justify-content: center;
+  font-family: "Sora";
+  border: 2px solid rgb(164, 164, 164);
+  background-color: none;
+  color: #fff;
+  border-radius: 10px;
+  align-content: center;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.payment-method-info {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: medium;
+  border: 2px grey;
+  background-color: white;
+  border: 10px;
+  color: black;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.checkout-total {
+  display: flex;
+  font-size: x-large;
+  font-family: "Sora";
+  font-weight: 600;
+}
+
+.checkout-price {
+  display: flex;
+  font-size: xx-large;
+  font-family: "Sora";
+  font-weight: 600;
+  padding-bottom: 1rem;
 }
 
 .box-3 {
@@ -1061,6 +1117,7 @@ textarea {
   padding-top: 2rem;
   padding-left: 17rem;
 }
+
 .contact-box {
   border: none;
   background-color: #ffffff;
@@ -1071,9 +1128,21 @@ textarea {
   padding: 10px;
   border-radius: 10px;
 
-  @media (width<320px) {
-    width: 350px;
-    height: 520px;
+  @media (width<500px) {
+    width: 300px;
+  }
+
+  @media (width<420px) {
+    width: 300px;
+    height: 1200px;
+  }
+
+  @media (width<600px) {
+    width: 500px;
+  }
+
+  @media (width<515px) {
+    width: 400px;
   }
 }
 
@@ -1082,6 +1151,7 @@ textarea {
   justify-content: center;
   font-family: "Sora";
   font-size: x-large;
+  text-transform: uppercase;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1101,6 +1171,7 @@ textarea {
   font-family: "Sora";
   padding-top: 0.5rem;
   font-weight: 300;
+  padding: 1rem;
 }
 
 .contact-sub-head {
@@ -1164,6 +1235,10 @@ textarea {
   border-radius: 30px;
   align-content: center;
   padding: 1rem;
+  font-weight: 300;
+  width: 300px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*FOOTER*/
