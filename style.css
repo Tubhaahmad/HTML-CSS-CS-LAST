@@ -194,9 +194,9 @@ header {
     transition: all 0.5s ease-in-out;
 
     &:hover {
-      background-color: lightgray;
+      background-color: rgb(255, 255, 255);
       color: #000000;
-      border-bottom: 0.7rem solid red;
+      border-bottom: 0.7rem solid rgb(50, 50, 50);
       margin: auto;
     }
   }
@@ -213,7 +213,7 @@ header {
     top: 0%;
     right: -100%;
     z-index: 100;
-    background-color: #03346e;
+    background-color: #ffffff;
     transition: all 0.5s ease-in-out;
   }
 
@@ -232,14 +232,14 @@ header {
 
   .nav-links li .nav-item {
     padding: 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
 
   .nav-links li .nav-item:hover {
     color: #000000;
-    border-bottom: 0.7rem solid red;
+    border-bottom: 0.7rem solid rgb(45, 45, 45);
     margin: auto;
   }
 
@@ -292,7 +292,7 @@ header {
 
   #jacket-links {
     display: none;
-    background-color: red;
+    background-color: rgb(26, 26, 26);
   }
 
   .jacket-links-mobile {
@@ -310,7 +310,7 @@ header {
     font-size: 1rem;
     font-family: "Poppins";
     font-weight: 500;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     transition: all 0.2s ease-in-out;
     justify-content: center;
@@ -327,7 +327,7 @@ header {
     background-color: lightgray;
     color: #000000;
     width: 100%;
-    border-bottom: 0.7rem solid red;
+    border-bottom: 0.7rem solid rgb(38, 38, 38);
     margin: auto;
   }
 }
@@ -794,8 +794,16 @@ header {
     width: 300px;
   }
 
+  @media (width<420px) {
+    width: 300px;
+  }
+
   @media (width<600px) {
     width: 500px;
+  }
+
+  @media (width<515px) {
+    width: 400px;
   }
 }
 
@@ -879,9 +887,8 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 1rem;
+  padding-top: 3rem;
   width: 100%;
-
   @media (width<500px) {
     width: 300px;
   }
@@ -895,7 +902,7 @@ header {
   flex-wrap: wrap;
   border: none;
   background-color: #ffffff;
-  width: 1100px;
+  width: 100%;
   height: 690px;
   padding: 10px;
   margin: 10px;
@@ -906,8 +913,16 @@ header {
     width: 300px;
   }
 
+  @media (width<420px) {
+    width: 300px;
+  }
+
   @media (width<600px) {
     width: 500px;
+  }
+
+  @media (width<515px) {
+    width: 400px;
   }
 }
 
@@ -988,11 +1003,11 @@ textarea {
   text-decoration: none;
 }
 
-.box-4 {
+.box-3 {
   flex-wrap: wrap;
   border: none;
   background-color: #ffffff;
-  width: 1100px;
+  width: 100%;
   height: 690px;
   padding: 10px;
   margin: 10px;
@@ -1003,8 +1018,17 @@ textarea {
     width: 300px;
   }
 
+  @media (width<420px) {
+    width: 300px;
+  }
+
   @media (width<600px) {
     width: 500px;
+  }
+
+  @media (width<515px) {
+    width: 400px;
+    justify-content: center;
   }
 }
 
@@ -1100,6 +1124,51 @@ textarea {
 
 /*CHECKOUT SUCCESS PAGE*/
 
+.success-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: auto;
+  padding-top: 10rem;
+}
+
+.success-header {
+  display: flex;
+  justify-content: center;
+  font-family: "Sora";
+  text-transform: uppercase;
+  font-size: xx-large;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.success-text {
+  display: flex;
+  justify-content: center;
+  font-family: "Sora";
+  padding-top: 0.5rem;
+}
+
+.continue-shopping-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  padding-top: 3rem;
+}
+
+.continue-shopping-btn {
+  display: flex;
+  justify-content: center;
+  font-family: "Sora";
+  border: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  align-content: center;
+  padding: 1rem;
+}
+
 /*FOOTER*/
 footer {
   display: flex;
@@ -1125,6 +1194,7 @@ footer {
 footer a {
   color: #fff;
   text-decoration: none;
+  font-family: "Sora";
 }
 
 .footer-customer-service,
@@ -1135,6 +1205,7 @@ footer a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  font-family: "Sora";
 
   @media (width>600px) {
     width: 47%;
