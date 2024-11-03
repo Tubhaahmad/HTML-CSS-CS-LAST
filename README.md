@@ -5,7 +5,7 @@
 <!-- You must replace these links -->
 
 - [Brief](https://noroff.sharepoint.com/:b:/s/FED1OSL24/EXvJ9TMGmU9Fsok1mQq1H08BKzQaheKEX5-p2e9czBsIdQ?e=TDbpCH)
-- [Design](<[_LINK_TO_FIGMA_](https://www.figma.com/design/UAJ0XJc3MFRXKls08Sn9E3/Rainy-Days---Tubha-Ahmad?node-id=0-1&node-type=canvas&t=4DVNu0vfeVSmhR3F-0)>)
+- [Design](<https://www.figma.com/design/UAJ0XJc3MFRXKls08Sn9E3/Rainy-Days---Tubha-Ahmad?node-id=0-1&node-type=canvas&t=4DVNu0vfeVSmhR3F-0)>)
 - [Production deploy](https://tubha-htmlcss-ca.netlify.app)
 - [Deployment CI](https://app.netlify.com/sites/tubha-htmlcss-ca/overview)
 
