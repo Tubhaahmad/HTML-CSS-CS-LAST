@@ -1097,13 +1097,10 @@ textarea {
 
 .contact-about-text {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-content: center;
   font-family: "Sora";
-  font-size: medium;
-  padding-bottom: 1rem;
-  width: 55rem;
+  padding-top: 0.5rem;
+  font-weight: 300;
 }
 
 .contact-sub-head {
@@ -1154,7 +1151,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: unset;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .continue-shopping-btn {
