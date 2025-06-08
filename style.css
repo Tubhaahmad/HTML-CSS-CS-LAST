@@ -390,11 +390,16 @@ header {
   background-color: white;
   color: black;
   font-size: 1em;
+  font-family: "Sora";
   max-height: 46px;
   border-radius: 1rem;
   padding: 9px 20px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.cta:hover {
+  text-decoration: underline;
 }
 
 /*HOME PAGE SECTION 2*/
