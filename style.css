@@ -1006,7 +1006,7 @@ textarea {
 }
 
 .btn-order-now:hover {
-  background-color: gray;
+  text-decoration: underline;
 }
 
 .payment-method-container {
@@ -1181,6 +1181,7 @@ textarea {
   font-size: xx-large;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .success-text {
@@ -1188,13 +1189,16 @@ textarea {
   justify-content: center;
   font-family: "Sora";
   padding-top: 0.5rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .continue-shopping-btn-container {
   display: flex;
   justify-content: center;
   align-items: unset;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .continue-shopping-btn {
@@ -1208,9 +1212,12 @@ textarea {
   align-content: center;
   padding: 1rem;
   font-weight: 300;
-  width: 300px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.continue-shopping-btn:hover {
+  text-decoration: underline;
 }
 
 /*FOOTER*/
