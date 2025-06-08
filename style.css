@@ -1149,6 +1149,7 @@ textarea {
   padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  
 
   @media (width>1050px) {
     width: 1000px;
@@ -1163,7 +1164,7 @@ textarea {
   align-items: center;
   width: 100%
   height: 730px;
-  
+  padding-bottom: 1rem;
   border-radius: 10px;
   
 }
@@ -1187,11 +1188,13 @@ textarea {
   font-size: medium;
 }
 
+
+
 .contact-about-text {
   display: flex;
   justify-content: center;
   font-family: "Sora";
-  padding-top: 0.5rem;
+  
   font-weight: 300;
   padding: 1rem;
 }
@@ -1201,7 +1204,10 @@ textarea {
   flex-direction: column;
   font-family: "Sora";
   font-size: large;
-  padding-top: 3rem;
+  padding-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .contact-info {
