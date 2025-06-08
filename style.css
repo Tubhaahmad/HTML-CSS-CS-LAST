@@ -425,9 +425,13 @@ header {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 2rem 2.5rem;
   flex-wrap: wrap;
   gap: 1rem;
+
+  @media (width>1311px) {
+    padding: 2rem 0rem;
+  }
 }
 
 .item-container {
@@ -511,9 +515,13 @@ header {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 2rem 2.5rem;
   flex-wrap: wrap;
   gap: 1rem;
+
+  @media (width>1311px) {
+    padding: 2rem 0rem;
+  }
 }
 
 /*JACKETS PAGE*/
