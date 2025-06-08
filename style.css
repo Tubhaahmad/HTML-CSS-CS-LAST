@@ -395,7 +395,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+
   font-family: "Sora";
   padding-top: 1rem;
 }
@@ -404,11 +405,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   font-family: "Sora";
   font-weight: 400;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+
+  @media (width>850px) {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 .new-fall-collection-items {
