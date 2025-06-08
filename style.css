@@ -708,6 +708,11 @@ header {
   font-family: "Sora";
 }
 
+.size-btn:hover {
+  background-color: black;
+  color: white;
+}
+
 .btn-add-to-cart {
   border: 1px solid black;
   background-color: black;
@@ -718,6 +723,10 @@ header {
   text-align: center;
   font-family: "Sora";
   text-decoration: none;
+}
+
+.btn-add-to-cart:hover {
+  text-decoration: underline;
 }
 
 .jacket-specific-related {
