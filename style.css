@@ -1284,3 +1284,11 @@ footer a {
     justify-content: space-between;
   }
 }
+
+.footer-customer-service:hover,
+.footer-shipping:hover,
+.footer-about:hover,
+.footer-follow:hover,
+.footer-payment:hover {
+  text-decoration: underline;
+}
