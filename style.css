@@ -516,6 +516,10 @@ header {
   font-weight: 200;
 }
 
+.c-btn-container a:hover {
+  text-decoration: underline;
+}
+
 .equipment-essentials-items {
   display: flex;
   justify-content: center;
