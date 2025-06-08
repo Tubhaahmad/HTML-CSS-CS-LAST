@@ -1225,10 +1225,11 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
+  text-align: center;
   gap: 1rem;
   background-color: #fff;
-  padding: 15px;
+  padding: 50px;
   margin-top: 50px;
   background-color: #1a1f1b;
   color: #fff;
@@ -1257,12 +1258,10 @@ footer a {
   flex-direction: column;
   width: 100%;
   font-family: "Sora";
+  justify-content: center;
+  padding-top: 1rem;
 
-  @media (width>600px) {
-    width: 47%;
-  }
-
-  @media (width>900px) {
+  @media (width>800px) {
     width: fit-content;
     justify-content: space-between;
   }
